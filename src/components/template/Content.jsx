@@ -65,27 +65,33 @@ export default function Content() {
                 {/*Inicio body all info*/}
         <div onClick={()=>setDropDown('hidden')}className="relative md:flex md:flex-col bg-white h-100vh w-full ">   
                 {/*Inicio body info*/}
-                <div className="flex flex-col md:flex-row md:w-full md:h-full justify-center items-center md:px-4 pb-40 pt-10 w-full h-100vh bg-blue-300 ">
-                    <div className="flex flex-col bg-white w-5/6 md:w-1/6 md:mr-3 h-28 md:h-1/6 mt-5 md:mt-0  justify-center items-center rounded-md shadow-xl font-sans">
-                        <h5 className="text-black">Vendas</h5>
-                        <span className="text-lime-500">{ArrowUp} 3.5% since last day.</span>
+                <div className="flex flex-col md:w-full md:h-full justify-center md:px-4 pb-40 pt-10 w-full h-100vh bg-blue-300 items-start">
+                    <div className='hidden w-full justify-between md:flex'>
+                        <div>Dashboard</div>
+                        <div>User</div>
                     </div>
-                    <div className="flex flex-col bg-white w-5/6 md:w-1/6 md:mr-3 h-28 md:h-1/6 mt-4 md:mt-0 justify-center items-center rounded-md shadow-xl">
-                        <h5 className="text-black">Lucro</h5>
-                        <span className="text-red-500">{ArrowDown} 3.5% since last day.</span>
+                    
+                    <div className="flex flex-col md:flex-row md:w-full md:h-full justify-center md:px-4 pb-40 pt-10 w-full items-center">
+
+                        <div className="flex flex-col bg-white w-5/6 md:w-1/6 md:mr-3 h-28 md:h-1/6 mt-5 md:mt-0  justify-center items-center rounded-md shadow-xl font-sans">
+                            <h5 className="text-black">Vendas</h5>
+                            <span className="text-lime-500">{ArrowUp} 3.5% since last day.</span>
+                        </div>
+                        <div className="flex flex-col bg-white w-5/6 md:w-1/6 md:mr-3 h-28 md:h-1/6 mt-4 md:mt-0 justify-center items-center rounded-md shadow-xl">
+                            <h5 className="text-black">Lucro</h5>
+                            <span className="text-red-500">{ArrowDown} 3.5% since last day.</span>
+                        </div>
+                        <div className="flex flex-col bg-white w-5/6 md:w-1/6 md:mr-3 h-28  mt-4 md:h-1/6 md:mt-0 justify-center items-center rounded-md shadow-xl lg:float-left">
+                            <h5 className="text-black">Lucro</h5>
+                            <span className="text-red-500">{ArrowDown} 3.5% since last day.</span>
+                        </div>
+                        <div className="flex flex-col bg-white w-5/6 md:w-1/6 md:mr-3 h-28 md:h-1/6 mt-4 md:mt-0 justify-center items-center rounded-md shadow-xl">
+                            <h5 className="text-black">Lucro</h5>
+                            <span className="text-red-500">{ArrowDown} 3.5% since last day.</span>   
+                        </div>          
                     </div>
-                    <div className="flex flex-col bg-white w-5/6 md:w-1/6 md:mr-3 h-28  mt-4 md:h-1/6 md:mt-0 justify-center items-center rounded-md shadow-xl">
-                        <h5 className="text-black">Lucro</h5>
-                        <span className="text-red-500">{ArrowDown} 3.5% since last day.</span>
-                    </div>
-                    <div className="flex flex-col bg-white w-5/6 md:w-1/6 md:mr-3 h-28 md:h-1/6 mt-4 md:mt-0 justify-center items-center rounded-md shadow-xl">
-                        <h5 className="text-black">Lucro</h5>
-                        <span className="text-red-500">{ArrowDown} 3.5% since last day.</span>   
-                    </div>          
                 </div>
         </div>
-
-
     </div>
   );
 }
